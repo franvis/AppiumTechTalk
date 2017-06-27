@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Appium Tech Talk</string>
+    <string name="form">Form</string>
+    <string name="list">List</string>
+    <string name="profile">Profile</string>
+    <string name="reset">Reset</string>
+    <string name="profile_error">Missing Profile.</string>
+    <string name="gender">"Gender: "</string>
+    <string name="eye_color">"Eye Color: "</string>
+    <string name="name_hint">Name</string>
+    <string name="last_name_hint">Last Name</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="submit">Submit</string>
+    <string name="success">Success</string>
+    <string name="error_name">Missing Name.</string>
+    <string name="error_last_name">Missing Last Name.</string>
+    <string name="error_gender">Missing Gender.</string>
+    <string name="error_eye_color">Missing Eye Color.</string>
+</resources>

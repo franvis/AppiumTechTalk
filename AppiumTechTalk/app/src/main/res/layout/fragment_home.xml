@@ -1,0 +1,51 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fran.appiumtechtalk.fragments.HomeFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="40dp">
+
+        <Button
+            android:id="@+id/form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="#E9FFC9"
+            android:text="@string/form"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_below="@id/form"
+            android:background="#DEFFF1"
+            android:text="@string/list"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_below="@id/list"
+            android:background="#FFC6D1"
+            android:text="@string/profile"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_below="@id/profile"
+            android:background="@android:color/black"
+            android:text="@string/reset"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+</FrameLayout>
