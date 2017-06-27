@@ -11,9 +11,8 @@ import com.example.fran.appiumtechtalk.bussines.ListItem;
 import java.util.ArrayList;
 
 /**
- * Created by fran on 26/06/17.
+ * @author f.visintini on 27/06/17.
  */
-
 public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ListItemViewHolder> {
 
     private ArrayList<ListItem> items;

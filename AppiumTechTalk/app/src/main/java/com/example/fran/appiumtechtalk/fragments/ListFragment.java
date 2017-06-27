@@ -12,6 +12,9 @@ import android.view.ViewGroup;
 import com.example.fran.appiumtechtalk.R;
 import com.example.fran.appiumtechtalk.adapters.ListAdapter;
 
+/**
+ * @author f.visintini on 27/06/17.
+ */
 public class ListFragment extends Fragment {
 
     public ListFragment() {

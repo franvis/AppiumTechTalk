@@ -11,6 +11,9 @@ import android.widget.TextView;
 import com.example.fran.appiumtechtalk.R;
 import com.example.fran.appiumtechtalk.bussines.User;
 
+/**
+ * @author f.visintini on 27/06/17.
+ */
 public class ProfileFragment extends Fragment {
 
     private static final String USER = "user";

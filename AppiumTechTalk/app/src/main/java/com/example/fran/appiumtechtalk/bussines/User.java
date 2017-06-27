@@ -3,6 +3,9 @@ package com.example.fran.appiumtechtalk.bussines;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+/**
+ * @author f.visintini on 27/06/17.
+ */
 public class User implements Parcelable{
 
     private String name;

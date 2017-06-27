@@ -1,9 +1,8 @@
 package com.example.fran.appiumtechtalk.bussines;
 
 /**
- * Created by fran on 26/06/17.
+ * @author f.visintini on 27/06/17.
  */
-
 public class ListItem {
 
     private String title;

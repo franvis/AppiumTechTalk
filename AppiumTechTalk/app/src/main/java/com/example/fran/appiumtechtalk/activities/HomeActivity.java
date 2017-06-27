@@ -11,6 +11,9 @@ import com.example.fran.appiumtechtalk.fragments.HomeFragment;
 import com.example.fran.appiumtechtalk.fragments.ListFragment;
 import com.example.fran.appiumtechtalk.fragments.ProfileFragment;
 
+/**
+ * @author f.visintini on 27/06/17.
+ */
 public class HomeActivity extends AppCompatActivity implements HomeFragment.OnHomeOptionSelected, FormFragment.onSaveUserDataListener {
 
     private User user;
@@ -59,5 +62,14 @@ public class HomeActivity extends AppCompatActivity implements HomeFragment.OnHo
     @Override
     public void onSaveUserData(User user) {
         this.user = user;
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (getSupportFragmentManager().getBackStackEntryCount() == 1) {
+            finish();
+        } else {
+            super.onBackPressed();
+        }
     }
 }
