@@ -6,7 +6,7 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.remote.MobilePlatform;
 
 /**
- * Created by f.visintini on 27/06/17.
+ * @author f.visintini on 27/06/17.
  */
 public abstract class Screen {
 
