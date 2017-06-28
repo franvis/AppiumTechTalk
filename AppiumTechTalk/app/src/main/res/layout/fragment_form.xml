@@ -91,6 +91,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/eye_color_layout"
+        android:contentDescription="@string/eye_color"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:theme="@style/AppTheme.Picker" />

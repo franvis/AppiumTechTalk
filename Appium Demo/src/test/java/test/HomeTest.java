@@ -2,8 +2,11 @@ package test;
 
 import org.junit.Assert;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import java.io.IOException;
 
 import io.appium.java_client.AppiumDriver;
 import screen.HomeScreen;
@@ -30,5 +33,13 @@ public class HomeTest extends BaseTest{
         Assert.assertTrue("List button should be displayed", homeScreen.isListButtonDisplayed());
         Assert.assertTrue("Profile button should be displayed", homeScreen.isProfileButtonDisplayed());
         Assert.assertTrue("Reset button should be displayed", homeScreen.isResetButtonDisplayed());
+    }
+
+    @AfterClass
+    public void suiteTearDown() throws IOException {
+        if (driver != null) {
+            driver.quit();
+            driver = null;
+        }
     }
 }
