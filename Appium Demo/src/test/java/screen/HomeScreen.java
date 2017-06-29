@@ -11,10 +11,10 @@ import io.appium.java_client.pagefactory.iOSFindBy;
 /**
  * @author f.visintini on 27/06/17.
  */
-public class HomeScreen extends Screen{
+public class HomeScreen extends Screen {
 
     public HomeScreen(AppiumDriver driver) {
-        PageFactory.initElements(new AppiumFieldDecorator(driver), this);
+        super(driver);
     }
 
     @AndroidFindBy(id = "form")
