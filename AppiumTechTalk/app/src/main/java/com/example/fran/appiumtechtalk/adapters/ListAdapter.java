@@ -2,6 +2,7 @@ package com.example.fran.appiumtechtalk.adapters;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
@@ -35,6 +36,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ListItemViewHo
 
         holder.title.setText(item.getTitle());
         holder.description.setText(item.getDescription());
+        holder.parentLayout.setContentDescription("List Item " + position);
     }
 
     @Override
@@ -43,6 +45,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ListItemViewHo
     }
 
     public class ListItemViewHolder extends RecyclerView.ViewHolder {
+        private final View parentLayout;
         private final TextView title;
         private final TextView description;
 
@@ -50,6 +53,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ListItemViewHo
             super(LayoutInflater.from(parent.getContext()).inflate(R.layout.list_item, parent, false));
             title = (TextView) itemView.findViewById(R.id.title);
             description = (TextView) itemView.findViewById(R.id.description);
+            parentLayout = itemView.findViewById(R.id.list_item);
         }
     }
 }
