@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Appium Demo.iml" filepath="$PROJECT_DIR$/Appium Demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/appium_demo.iml" filepath="$PROJECT_DIR$/appium_demo.iml" />
     </modules>
   </component>
 </project>
