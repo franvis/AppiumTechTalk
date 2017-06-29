@@ -82,7 +82,7 @@ public class FormFragment extends Fragment {
             }
         });
 
-        final String[] arrayPicker= new String[]{" ","Blue","Green","Black","Blue","Other"};
+        final String[] arrayPicker= new String[]{" ","Blue","Green","Black","Brown","Other"};
 
         pickers.setMinValue(0);
         pickers.setMaxValue(arrayPicker.length - 1);
