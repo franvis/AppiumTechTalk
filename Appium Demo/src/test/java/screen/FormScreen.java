@@ -1,9 +1,11 @@
 package screen;
 
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.iOSFindBy;
+import io.appium.java_client.remote.MobilePlatform;
 
 /**
  * @author Francisco Visintini.
@@ -13,6 +15,9 @@ public class FormScreen extends Screen {
     public FormScreen(AppiumDriver driver) {
         super(driver);
     }
+
+    private static final String EYE_COLOR_FINDER = "new UiScrollable(.className(\"android.widget.NumberPicker\").scrollable(true))" +
+            ".setAsVerticalList().setSwipeDeadZonePercentage(0.9).scrollIntoView(.textContains(\"%s\"))";
 
     @AndroidFindBy(id = "error")
     @iOSFindBy(id = "")
@@ -53,4 +58,12 @@ public class FormScreen extends Screen {
     @AndroidFindBy(id = "submit")
     @iOSFindBy(id = "")
     public MobileElement submitButton;
+
+    public void selectEyeColor(String eyeColor) {
+        if (platform.equals(MobilePlatform.ANDROID)) {
+            driver.findElement(MobileBy.AndroidUIAutomator(String.format(EYE_COLOR_FINDER, eyeColor)));
+        } else {
+
+        }
+    }
 }
