@@ -2,13 +2,11 @@ package test;
 
 import org.testng.annotations.Test;
 
-import Configuration.Copy;
-import io.appium.java_client.MobileElement;
-import screen.ListScreen;
+import configuration.Copy;
 import screen.ProfileScreen;
 
 /**
- * Created by emiliano.alvarez on 6/29/17.
+ * @author Emiliano Alvarez.
  */
 public class ProfileTest extends BaseTest {
 

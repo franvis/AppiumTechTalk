@@ -2,16 +2,16 @@ package test;
 
 import org.testng.annotations.Test;
 
-import Configuration.Copy;
+import configuration.Copy;
 import screen.FormScreen;
 
 /**
- * Created by emiliano.alvarez on 6/28/17.
+ * @author Emiliano Alvarez.
  */
 public class FormTest extends BaseTest {
 
     @Test
-    public void validateMissingNameError() {
+    public void validateMissingNameError() throws Exception {
         FormScreen formScreen = navigator.goToFormScreen();
         formScreen.submitButton.click();
 
@@ -19,7 +19,7 @@ public class FormTest extends BaseTest {
     }
 
     @Test
-    public void validateMissingLastNameError() {
+    public void validateMissingLastNameError() throws Exception {
         FormScreen formScreen = navigator.goToFormScreen();
         formScreen.nameTextField.sendKeys("Francisco");
         formScreen.submitButton.click();

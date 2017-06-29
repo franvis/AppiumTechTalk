@@ -6,7 +6,7 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.iOSFindBy;
 
 /**
- * @author f.visintini on 27/06/17.
+ * @author Francisco Visintini.
  */
 public class FormScreen extends Screen {
 

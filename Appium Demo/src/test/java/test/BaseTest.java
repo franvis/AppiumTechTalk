@@ -16,11 +16,11 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.remote.MobilePlatform;
-import Configuration.Constants;
-import Configuration.Navigator;
+import configuration.Constants;
+import configuration.Navigator;
 
 /**
- * @author f.visintini on 27/06/17.
+ * @author Francisco Visintini.
  */
 public abstract class BaseTest {
 
@@ -89,7 +89,7 @@ public abstract class BaseTest {
         System.out.println(": Succeed");
     }
 
-    protected void assertEquals(String message, String expected, String actual) {
+    protected void assertEquals(String message, String expected, String actual) throws Exception {
         System.out.print("Validating " + message);
         try {
             AssertJUnit.assertEquals(message, expected, actual);

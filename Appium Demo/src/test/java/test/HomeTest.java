@@ -1,19 +1,11 @@
 package test;
 
-import org.junit.AfterClass;
-import org.junit.Assert;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
-import io.appium.java_client.AppiumDriver;
-import screen.FormScreen;
 import screen.HomeScreen;
 
 
 /**
- * @author f.visintini on 27/06/17.
+ * @author Francisco Visintini.
  */
 public class HomeTest extends BaseTest {
 

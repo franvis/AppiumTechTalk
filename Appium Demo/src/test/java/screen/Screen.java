@@ -11,7 +11,7 @@ import io.appium.java_client.remote.MobilePlatform;
 import static org.openqa.selenium.support.PageFactory.initElements;
 
 /**
- * @author f.visintini on 27/06/17.
+ * @author Francisco Visintini.
  */
 public abstract class Screen {
 

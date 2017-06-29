@@ -7,7 +7,7 @@ import io.appium.java_client.pagefactory.iOSFindBy;
 import io.appium.java_client.remote.MobilePlatform;
 
 /**
- * @author f.visintini on 27/06/17.
+ * @author Francisco Visintini.
  */
 public class ProfileScreen extends Screen {
 

@@ -2,13 +2,12 @@ package test;
 
 import org.testng.annotations.Test;
 
-import Configuration.Copy;
+import configuration.Copy;
 import io.appium.java_client.MobileElement;
-import screen.HomeScreen;
 import screen.ListScreen;
 
 /**
- * Created by emiliano.alvarez on 6/29/17.
+ * @author Emiliano Alvarez.
  */
 public class ListTest extends BaseTest {
 

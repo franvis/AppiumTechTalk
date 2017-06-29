@@ -1,7 +1,7 @@
-package Configuration;
+package configuration;
 
 /**
- * Created by emiliano.alvarez on 6/29/17.
+ * @author Emiliano Alvarez.
  */
 public class Copy {
 

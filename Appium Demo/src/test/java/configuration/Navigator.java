@@ -1,10 +1,9 @@
-package Configuration;
+package configuration;
 
 import org.openqa.selenium.NoSuchElementException;
 
 import java.util.Stack;
 
-import Configuration.Constants;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.remote.MobilePlatform;
 import screen.FormScreen;
@@ -14,12 +13,11 @@ import screen.ProfileScreen;
 import screen.Screen;
 
 /**
- * @author f.visintini on 27/06/17.
+ * @author Francisco Visintini.
  */
 public class Navigator {
 
     private final AppiumDriver driver;
-    protected final String platform = Constants.platform;
     private Stack<Screen> navigationStack = new Stack<>();
 
     public Navigator(AppiumDriver driver) {
