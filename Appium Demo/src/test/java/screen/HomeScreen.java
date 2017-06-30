@@ -15,19 +15,19 @@ public class HomeScreen extends Screen {
     }
 
     @AndroidFindBy(id = "form")
-    @iOSFindBy(id = "")
+    @iOSFindBy(id = "formButton")
     public MobileElement formButton;
 
     @AndroidFindBy(id = "list")
-    @iOSFindBy(id = "")
+    @iOSFindBy(id = "listButton")
     public MobileElement listButton;
 
     @AndroidFindBy(id = "profile")
-    @iOSFindBy(id = "")
+    @iOSFindBy(id = "profileButton")
     public MobileElement profileButton;
 
     @AndroidFindBy(id = "reset")
-    @iOSFindBy(id = "")
+    @iOSFindBy(id = "resetButton")
     public MobileElement resetButton;
 
     public boolean isFormButtonDisplayed(){
@@ -45,5 +45,4 @@ public class HomeScreen extends Screen {
     public boolean isResetButtonDisplayed(){
         return isElementDisplayed(resetButton);
     }
-
 }

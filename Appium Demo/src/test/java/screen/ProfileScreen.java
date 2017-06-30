@@ -16,38 +16,62 @@ public class ProfileScreen extends Screen {
     }
 
     @AndroidFindBy(id = "error")
-    @iOSFindBy(id = "")
     public MobileElement errorLabel;
 
     @AndroidFindBy(id = "name")
-    @iOSFindBy(id = "")
     public MobileElement nameLabel;
 
     @AndroidFindBy(id = "last_name")
-    @iOSFindBy(id = "")
     public MobileElement lastNameLabel;
 
-    @AndroidFindBy(id = "gender_label")
-    @iOSFindBy(id = "")
-    public MobileElement genderTitleLabel;
+    @iOSFindBy(id = "profileFullNameLabel")
+    public MobileElement fullNameLabel;
 
     @AndroidFindBy(id = "gender")
-    @iOSFindBy(id = "")
+    @iOSFindBy(id = "profileGenderLabel")
     public MobileElement genderLabel;
 
-    @AndroidFindBy(id = "eye_color_label")
-    @iOSFindBy(id = "")
-    public MobileElement eyeColorTitleLabel;
-
     @AndroidFindBy(id = "eye_color")
-    @iOSFindBy(id = "")
+    @iOSFindBy(id = "profileEyeColorLabel")
     public MobileElement eyeColorLabel;
 
     public String getMissingProfileText() {
         if (platform.equals(MobilePlatform.ANDROID)) {
             return errorLabel.getText();
         } else {
-            return "";
+            return fullNameLabel.getText();
+        }
+    }
+
+    public String getName() {
+        if (platform.equals(MobilePlatform.ANDROID)) {
+            return nameLabel.getText();
+        } else {
+            return fullNameLabel.getText().split(" ")[0];
+        }
+    }
+
+    public String getLastName() {
+        if (platform.equals(MobilePlatform.ANDROID)) {
+            return lastNameLabel.getText();
+        } else {
+            return fullNameLabel.getText().split(" ")[1];
+        }
+    }
+
+    public String getGender() {
+        if (platform.equals(MobilePlatform.ANDROID)) {
+            return genderLabel.getText();
+        } else {
+            return genderLabel.getText().split(" ")[1];
+        }
+    }
+
+    public String getEyeColor() {
+        if (platform.equals(MobilePlatform.ANDROID)) {
+            return eyeColorLabel.getText();
+        } else {
+            return eyeColorLabel.getText().split(" ")[2];
         }
     }
 }

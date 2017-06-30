@@ -14,6 +14,7 @@ import java.net.URL;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
+import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.remote.MobilePlatform;
 import configuration.Constants;
@@ -47,8 +48,8 @@ public abstract class BaseTest {
 
     protected AppiumDriver createAndroidDriver() throws MalformedURLException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability(MobileCapabilityType.APP_PACKAGE, "com.example.fran.appiumtechtalk");
-        capabilities.setCapability(MobileCapabilityType.APP_ACTIVITY, "com.example.fran.appiumtechtalk.activities.HomeActivity");
+        capabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.example.fran.appiumtechtalk");
+        capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, "com.example.fran.appiumtechtalk.activities.HomeActivity");
         capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Android Device");
         capabilities.setCapability(CapabilityType.BROWSER_NAME, "");
 
@@ -57,10 +58,9 @@ public abstract class BaseTest {
 
     protected AppiumDriver createiOSDriver() throws MalformedURLException{
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("bundleId", "wdpro.disney.com.sample_login");
+        capabilities.setCapability("app", "/Users/emiliano.alvarez/Library/Developer/Xcode/DerivedData/Automation-egyojwoaygwuegehsemoxihdxqzc/Build/Products/Debug-iphonesimulator/Automation.app");
         capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 6");
         capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "9.3");
-        capabilities.setCapability(CapabilityType.BROWSER_NAME, "");
 
         return new IOSDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
     }

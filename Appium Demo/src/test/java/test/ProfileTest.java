@@ -25,15 +25,16 @@ public class ProfileTest extends BaseTest {
         String expectedEyeColor = "Green";
 
         FormScreen formScreen = navigator.goToFormScreen();
-        formScreen.nameTextField.sendKeys(expectedName);
-        formScreen.lastNameTextField.sendKeys(expectedLastName);
-        formScreen.genderMaleButton.click();
+        formScreen.nameTextField.setValue(expectedName);
+        formScreen.lastNameTextField.setValue(expectedLastName);
+        formScreen.selectMaleGender();
         formScreen.selectEyeColor(expectedEyeColor);
+
         formScreen.submitButton.click();
         ProfileScreen profileScreen = navigator.goToProfileScreen();
-        assertEquals("Name is as expected.", expectedName, profileScreen.nameLabel.getText());
-        assertEquals("Last Name is as expected.", expectedLastName, profileScreen.lastNameLabel.getText());
-        assertEquals("Gender is as expected.", expectedGender, profileScreen.genderLabel.getText());
-        assertEquals("Eye Color is as expected.", expectedEyeColor, profileScreen.eyeColorLabel.getText());
+        assertEquals("Name is as expected.", expectedName, profileScreen.getName());
+        assertEquals("Last Name is as expected.", expectedLastName, profileScreen.getLastName());
+        assertEquals("Gender is as expected.", expectedGender, profileScreen.getGender());
+        assertEquals("Eye Color is as expected.", expectedEyeColor, profileScreen.getEyeColor());
     }
 }

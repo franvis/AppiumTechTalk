@@ -5,5 +5,6 @@ package configuration;
  */
 public class Constants {
 
-    final public static String platform = "Android";
+    final public static String platform = "iOS";
+    //final public static String platform = "Android";
 }

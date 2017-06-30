@@ -2,6 +2,7 @@ package screen;
 
 import org.openqa.selenium.NoSuchElementException;
 
+import configuration.Constants;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
@@ -19,8 +20,7 @@ public abstract class Screen {
     public MobileElement backButton;
 
     protected final AppiumDriver driver;
-    protected final String platform = "Android";
-    //    public static final String platform = "iOS";
+    protected final String platform = Constants.platform;
 
     public Screen(AppiumDriver driver) {
         this.driver = driver;

@@ -25,7 +25,7 @@ public class ListScreen extends Screen {
             return (MobileElement) driver.findElement(
                     MobileBy.AndroidUIAutomator(String.format(LIST_ITEMS, index, "title")));
         } else {
-            return (MobileElement) driver.findElementsById("entitlementTitle").get(0);
+            return (MobileElement) driver.findElementsById("titleCell").get(index);
         }
     }
 
@@ -34,7 +34,7 @@ public class ListScreen extends Screen {
             return (MobileElement) driver.findElement(
                     MobileBy.AndroidUIAutomator(String.format(LIST_ITEMS, index, "description")));
         } else {
-            return (MobileElement) driver.findElementsById("entitlementTitle").get(0);
+            return (MobileElement) driver.findElementsById("descriptionCell").get(index);
         }
     }
 }
